@@ -4,20 +4,20 @@ import org.junit.jupiter.api.Test;
 
 class AplicacaoTest {
 	
-	private float periodo = 60f;
+	private int periodo = 60;
 	private float capital_inicial = 1000.0f;
 	private float taxa_juros = 8.5f;
 
 	@Test
 	void testRendimentoBruto() {
 		Aplicacao aplicacao = new Aplicacao(periodo, capital_inicial, taxa_juros);
-		assertEquals(aplicacao.getRendimentoBruto(), 13.97f);
+		assertEquals(aplicacao.getRendimentoBruto(), 13.97f, 0.1);
 	}
 	
 	@Test
 	void testRendimentoRenda() {
 		Aplicacao aplicacao = new Aplicacao(periodo, capital_inicial, taxa_juros);
-		assertEquals(aplicacao.getImpostoRenda(), 3.14f);
+		assertEquals(3.14f, aplicacao.getImpostoRenda(), 0.1);
 	}
 	
 	@Test
