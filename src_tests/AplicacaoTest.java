@@ -23,7 +23,7 @@ class AplicacaoTest {
 	@Test
 	void testRendimentoLiquido() {
 		Aplicacao aplicacao = new Aplicacao(periodo, capital_inicial, taxa_juros);
-		assertEquals(aplicacao.getRendimentoLiquido(), 1.08f, 0.01);
+		assertEquals(aplicacao.getRendimentoLiquido(), 1.0829f, 0.01);
 	}
 
 }
